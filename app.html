@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent tracker</title>
+    <!-- bootstarp files -->
+    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="./assets/bootstrap/jquery-3.4.1.slim.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="board-box">
+        <p>Note*
+            <br>
+            if hour is less than 24 then rate will be normal as given. but if Hour is more than 24 than rate
+            will be double for extra hour more than 24.
+        </p>
+    </div>
+
+
+    <div class="main-box">
+            <label>Enter Total Hours</label>
+            <input type="text" class="form-control" name="hours" id="get_hours">
+            <label>Enter Rent rate</label>
+            <input type="text" class="form-control" name="rate" value="" id="get_rate">
+            <button onclick="calculate()" class="btn btn-sm btn-info mt-2 btn-block">Check</button>
+            <hr>
+            <h3 class="text-center">Total Amount</h3>
+            <h4 id="showAmount" class="text-center">Rs.</h4>
+    </div>
+
+
+
+
+
+    <!-- scripts -->
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/popper.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
